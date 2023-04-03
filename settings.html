@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAZZA Capital</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="LAZZA">
+    <meta property="og:site_name" content="LAZZA">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+
+<main class="main-content">
+    <section class="sidebar">
+        <div class="sidebar__logo">
+            <a href="/"><img src="dist/images/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="sidebar__toggle" data-menu-toggle>
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+        </div>
+
+        <nav class="sidebar__nav" data-menu-nav>
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <a href="/"><i class="icon-menu1"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="deposits.html"><i class="icon-menu2"></i> <span>Deposit</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="withdraw.html"><i class="icon-menu3"></i> <span>Withdraw</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="your-deposit.html"><i class="icon-menu4"></i> <span>Your Deposit</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="earnings.html"><i class="icon-menu5"></i> <span>Earnings</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="referrals.html"><i class="icon-menu6"></i> <span>Referrals</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="banners.html"><i class="icon-menu7"></i> <span>Banners</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="settings.html" class="active"><i class="icon-menu8"></i> <span>Settings</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="security.html"><i class="icon-menu9"></i> <span>Security</span></a>
+                </li>
+                <li class="sidebar__nav-item nav-item--logout">
+                    <a href="/"><i class="icon-logout"></i> <span>Logout</span></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="header__start">
+                <b class="title-h2">Welcome Back, abadul !</b>
+                <span>Let’s do the best today</span>
+            </div>
+            <div class="header__stats">
+                <p><span class="body-small">Sep-6-2022 07:27:54 AM</span> <b>Last Access</b></p>
+                <p><span class="body-small">Sep-6-2022</span> <b>Reg Date</b></p>
+            </div>
+        </header>
+
+        <section class="dashboard">
+            <div class="grid">
+                <div class="grid-item grid-item--fluid mb-30">
+                    <nav class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item">
+                                <a href="deposits.html" class="btn btn-secondary-outline"><span>Deposit</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="withdraw.html" class="btn btn-secondary-outline"><span>Withdrawal</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="referrals.html" class="btn btn-secondary-outline"><span>Referral</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="security.html" class="btn btn-secondary-outline"><span>Security</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="grid-item">
+                    <div class="settings">
+                        <div class="settings__title"><h2>Settings</h2></div>
+                        <form id="settingsForm" class="settings__form" action="?">
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>First Name</label>
+                                    <input type="number" value="" name="name" />
+                                </div>
+                                <div class="error-msg">Enter valid name</div>
+                            </div>
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>Last Name</label>
+                                    <input type="number" value="" name="surname" />
+                                </div>
+                                <div class="error-msg">Enter valid surname</div>
+                            </div>
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>Time</label>
+                                    <input type="number" value="" name="" />
+                                </div>
+                            </div>
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>Password</label>
+                                    <input type="password" value="" name="password" />
+                                </div>
+                                <div class="error-msg">Enter valid password</div>
+                            </div>
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>Confirm Password</label>
+                                    <input type="password" value="" name="password_repeat" />
+                                </div>
+                                <div class="error-msg">Enter valid password</div>
+                            </div>
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>Email Address</label>
+                                    <input type="text" value="" name="email" />
+                                </div>
+                                <div class="error-msg">Enter valid email</div>
+                            </div>
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>Enter Your Bitcoin acc no</label>
+                                    <input type="text" value="" name="" />
+                                </div>
+                            </div>
+                            <div class="settings__form-line form-line">
+                                <div class="input-group">
+                                    <label>Enter Your Tether TRCO20 acc no</label>
+                                    <input type="text" value="" name="" />
+                                </div>
+                            </div>
+                            <div class="settings__form-line form-line form-line--btns">
+                                <div class="btn-group">
+                                    <button type="button" class="btn">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+</body>
+</html>

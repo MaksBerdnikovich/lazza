@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAZZA Capital</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="LAZZA">
+    <meta property="og:site_name" content="LAZZA">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+
+<main class="main-content">
+    <section class="sidebar">
+        <div class="sidebar__logo">
+            <a href="/"><img src="dist/images/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="sidebar__toggle" data-menu-toggle>
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+        </div>
+
+        <nav class="sidebar__nav" data-menu-nav>
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <a href="/"><i class="icon-menu1"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="deposits.html"><i class="icon-menu2"></i> <span>Deposit</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="withdraw.html"><i class="icon-menu3"></i> <span>Withdraw</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="your-deposit.html"><i class="icon-menu4"></i> <span>Your Deposit</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="earnings.html" class="active"><i class="icon-menu5"></i> <span>Earnings</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="referrals.html"><i class="icon-menu6"></i> <span>Referrals</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="banners.html"><i class="icon-menu7"></i> <span>Banners</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="settings.html"><i class="icon-menu8"></i> <span>Settings</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="security.html"><i class="icon-menu9"></i> <span>Security</span></a>
+                </li>
+                <li class="sidebar__nav-item nav-item--logout">
+                    <a href="/"><i class="icon-logout"></i> <span>Logout</span></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="header__start">
+                <b class="title-h2">Welcome Back, abadul !</b>
+                <span>Let’s do the best today</span>
+            </div>
+            <div class="header__stats">
+                <p><span class="body-small">Sep-6-2022 07:27:54 AM</span> <b>Last Access</b></p>
+                <p><span class="body-small">Sep-6-2022</span> <b>Reg Date</b></p>
+            </div>
+        </header>
+
+        <section class="dashboard">
+            <div class="grid">
+                <div class="grid-item grid-item--fluid mb-30">
+                    <nav class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item">
+                                <a href="deposits.html" class="btn btn-secondary-outline"><span>Deposit</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="withdraw.html" class="btn btn-secondary-outline"><span>Withdrawal</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="referrals.html" class="btn btn-secondary-outline"><span>Referral</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="security.html" class="btn btn-secondary-outline"><span>Security</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="grid-item">
+                    <div class="earnings">
+                        <div class="earnings__title"><h2>History</h2></div>
+                        <div class="earnings__wrap">
+                            <div class="earnings__filter">
+                                <div class="earnings__filter-line filter-line--select">
+                                    <div class="select-group">
+                                        <select data-select>
+                                            <option value="">Earning</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200</option>
+                                            <option value="300">300</option>
+                                            <option value="400">400</option>
+                                            <option value="500">500</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group">
+                                        <select data-select>
+                                            <option value="">All Currencies</option>
+                                            <option value="bnb">BNB Binance</option>
+                                            <option value="tth">USDT Tether</option>
+                                            <option value="ltc">LTC Litecoin</option>
+                                            <option value="btc">BTC Bitcoin</option>
+                                            <option value="eth">ETH Ethereum</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="earnings__filter-line filter-line--range" data-datepicker-range>
+                                    <div class="input-group input-group--picker">
+                                        <label>Date range</label>
+                                        <input type="text" name="start" value="" />
+                                    </div>
+                                    <div class="input-group input-group--picker">
+                                        <input type="text" name="end" value="" />
+                                    </div>
+                                </div>
+                                <div class="earnings__filter-line filter-line--btn">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn">Cancel</button>
+                                        <button type="button" class="btn btn-primary">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="earnings__table">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Plan</th>
+                                        <th>Deposit Amount</th>
+                                        <th>Daily Profit (%)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="table-row--default">
+                                        <td>
+                                            <div class="item--earning-plan">
+                                                <b>Earning</b>
+                                                <span>Earning from deposit $100.00 - 2.20 %</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-amount">
+                                                <b>$240.00</b>
+                                                <i><img src="dist/images/btc.svg" alt="bitcoin"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-profit">
+                                                <b>Sep-10-2022 02:04:53 AM</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row--default">
+                                        <td>
+                                            <div class="item--earning-plan">
+                                                <b>Earning</b>
+                                                <span>Earning from deposit $100.00 - 2.20 %</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-amount">
+                                                <b>$2.20</b>
+                                                <i><img src="dist/images/tth.svg" alt="bitcoin"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-profit">
+                                                <b>Sep-10-2022 02:04:53 AM</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row--default">
+                                        <td>
+                                            <div class="item--earning-plan">
+                                                <b>Earning</b>
+                                                <span>Earning from deposit $100.00 - 2.20 %</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-amount">
+                                                <b>$240.00</b>
+                                                <i><img src="dist/images/btc.svg" alt="bitcoin"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-profit">
+                                                <b>Sep-10-2022 02:04:53 AM</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row--default">
+                                        <td>
+                                            <div class="item--earning-plan">
+                                                <b>Earning</b>
+                                                <span>Earning from deposit $100.00 - 2.20 %</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-amount">
+                                                <b>$2.20</b>
+                                                <i><img src="dist/images/tth.svg" alt="bitcoin"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-profit">
+                                                <b>Sep-10-2022 02:04:53 AM</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row--default">
+                                        <td>
+                                            <div class="item--earning-plan">
+                                                <b>Earning</b>
+                                                <span>Earning from deposit $100.00 - 2.20 %</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-amount">
+                                                <b>$240.00</b>
+                                                <i><img src="dist/images/btc.svg" alt="bitcoin"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-profit">
+                                                <b>Sep-10-2022 02:04:53 AM</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row--default">
+                                        <td>
+                                            <div class="item--earning-plan">
+                                                <b>Earning</b>
+                                                <span>Earning from deposit $100.00 - 2.20 %</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-amount">
+                                                <b>$2.20</b>
+                                                <i><img src="dist/images/tth.svg" alt="bitcoin"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-profit">
+                                                <b>Sep-10-2022 02:04:53 AM</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row--totals">
+                                        <td>
+                                            <div class="item--earning-plan">
+                                                <strong>Total for selected options:</strong>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item--earning-amount">
+                                                <b>$240.00</b>
+                                                <i><img src="dist/images/btc.svg" alt="bitcoin"></i>
+                                            </div>
+                                            <div class="item--earning-amount">
+                                                <b>$2.20</b>
+                                                <i><img src="dist/images/tth.svg" alt="bitcoin"></i>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <ul>
+                    <li><a href="#" class="pagination__prev disabled"><img src="dist/images/str.svg" alt="prev"></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#" class="separate">...</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#" class="pagination__next"><img src="dist/images/str.svg" alt="next"></a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+</body>
+</html>

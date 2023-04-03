@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAZZA Capital</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="LAZZA">
+    <meta property="og:site_name" content="LAZZA">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+
+<main class="main-content">
+    <section class="sidebar">
+        <div class="sidebar__logo">
+            <a href="/"><img src="dist/images/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="sidebar__toggle" data-menu-toggle>
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+        </div>
+
+        <nav class="sidebar__nav" data-menu-nav>
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <a href="/"><i class="icon-menu1"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="deposits.html" class="active"><i class="icon-menu2"></i> <span>Deposit</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="withdraw.html"><i class="icon-menu3"></i> <span>Withdraw</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="your-deposit.html"><i class="icon-menu4"></i> <span>Your Deposit</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="earnings.html"><i class="icon-menu5"></i> <span>Earnings</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="referrals.html"><i class="icon-menu6"></i> <span>Referrals</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="banners.html"><i class="icon-menu7"></i> <span>Banners</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="settings.html"><i class="icon-menu8"></i> <span>Settings</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="security.html"><i class="icon-menu9"></i> <span>Security</span></a>
+                </li>
+                <li class="sidebar__nav-item nav-item--logout">
+                    <a href="/"><i class="icon-logout"></i> <span>Logout</span></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="header__start">
+                <b class="title-h2">Welcome Back, abadul !</b>
+                <span>Let’s do the best today</span>
+            </div>
+            <div class="header__stats">
+                <p><span class="body-small">Sep-6-2022 07:27:54 AM</span> <b>Last Access</b></p>
+                <p><span class="body-small">Sep-6-2022</span> <b>Reg Date</b></p>
+            </div>
+        </header>
+
+        <section class="dashboard">
+            <div class="grid">
+                <div class="grid-item grid-item--fluid mb-30">
+                    <nav class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item">
+                                <a href="deposits.html" class="btn btn-primary"><span>Deposit</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="withdraw.html" class="btn btn-secondary-outline"><span>Withdrawal</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="referrals.html" class="btn btn-secondary-outline"><span>Referral</span></a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="security.html" class="btn btn-secondary-outline"><span>Security</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="grid-item">
+                    <div class="deposit-plan mb-30">
+                        <div class="deposit-plan__title"><h2>Deposit Plan</h2></div>
+                        <div class="deposit-plan__wrap">
+                            <div class="deposit-plan__block">
+                                <div class="deposit-plan__item">
+                                    <input id="plan-1" type="radio" name="plan" value="1">
+                                    <label for="plan-1">
+                                        <div class="deposit-plan__item-name title-h1">Plan 1</div>
+                                        <div class="deposit-plan__item-profit title-h3">2.20% daily for 365 days</div>
+                                        <div class="deposit-plan__item-info">
+                                            <ul>
+                                                <li><span>Minimum deposit:</span> <b>$0.00</b></li>
+                                                <li><span>Maximum deposit:</span> <b>$100.00</b></li>
+                                                <li><span>Percentage:</span> <b>2.20%</b></li>
+                                            </ul>
+                                        </div>
+                                        <div class="deposit-plan__item-btn">
+                                            <a href="javascript:void(0)" class="btn btn-primary-outline">Select Plan</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="deposit-plan__block">
+                                <div class="deposit-plan__item">
+                                    <input id="plan-2" type="radio" name="plan" value="2" checked>
+                                    <label for="plan-2">
+                                        <div class="deposit-plan__item-name title-h1">Plan 2</div>
+                                        <div class="deposit-plan__item-profit title-h3">2.20% daily for 365 days</div>
+                                        <div class="deposit-plan__item-info">
+                                            <ul>
+                                                <li><span>Minimum deposit:</span> <b>$0.00</b></li>
+                                                <li><span>Maximum deposit:</span> <b>$100.00</b></li>
+                                                <li><span>Percentage:</span> <b>2.20%</b></li>
+                                            </ul>
+                                        </div>
+                                        <div class="deposit-plan__item-btn">
+                                            <a href="javascript:void(0)" class="btn btn-primary-outline">Select Plan</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="deposit-plan__block">
+                                <div class="deposit-plan__item">
+                                    <input id="plan-3" type="radio" name="plan" value="3">
+                                    <label for="plan-3">
+                                        <div class="deposit-plan__item-name title-h1">Plan 3</div>
+                                        <div class="deposit-plan__item-profit title-h3">2.20% daily for 365 days</div>
+                                        <div class="deposit-plan__item-info">
+                                            <ul>
+                                                <li><span>Minimum deposit:</span> <b>$0.00</b></li>
+                                                <li><span>Maximum deposit:</span> <b>$100.00</b></li>
+                                                <li><span>Percentage:</span> <b>2.20%</b></li>
+                                            </ul>
+                                        </div>
+                                        <div class="deposit-plan__item-btn">
+                                            <a href="javascript:void(0)" class="btn btn-primary-outline">Select Plan</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="deposit-plan__block">
+                                <div class="deposit-plan__item">
+                                    <input id="plan-4" type="radio" name="plan" value="4">
+                                    <label for="plan-4">
+                                        <div class="deposit-plan__item-name title-h1">Plan 4</div>
+                                        <div class="deposit-plan__item-profit title-h3">2.20% daily for 365 days</div>
+                                        <div class="deposit-plan__item-info">
+                                            <ul>
+                                                <li><span>Minimum deposit:</span> <b>$0.00</b></li>
+                                                <li><span>Maximum deposit:</span> <b>$100.00</b></li>
+                                                <li><span>Percentage:</span> <b>2.20%</b></li>
+                                            </ul>
+                                        </div>
+                                        <div class="deposit-plan__item-btn">
+                                            <a href="javascript:void(0)" class="btn btn-primary-outline">Select Plan</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="deposit-plan__block">
+                                <div class="deposit-plan__item">
+                                    <input id="plan-5" type="radio" name="plan" value="5">
+                                    <label for="plan-5">
+                                        <div class="deposit-plan__item-name title-h1">Plan 5</div>
+                                        <div class="deposit-plan__item-profit title-h3">2.20% daily for 365 days</div>
+                                        <div class="deposit-plan__item-info">
+                                            <ul>
+                                                <li><span>Minimum deposit:</span> <b>$0.00</b></li>
+                                                <li><span>Maximum deposit:</span> <b>$100.00</b></li>
+                                                <li><span>Percentage:</span> <b>2.20%</b></li>
+                                            </ul>
+                                        </div>
+                                        <div class="deposit-plan__item-btn">
+                                            <a href="javascript:void(0)" class="btn btn-primary-outline">Select Plan</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="deposit-plan__block">
+                                <div class="deposit-plan__item">
+                                    <input id="plan-6" type="radio" name="plan" value="6">
+                                    <label for="plan-6">
+                                        <div class="deposit-plan__item-name title-h1">Plan 6</div>
+                                        <div class="deposit-plan__item-profit title-h3">2.20% daily for 365 days</div>
+                                        <div class="deposit-plan__item-info">
+                                            <ul>
+                                                <li><span>Minimum deposit:</span> <b>$0.00</b></li>
+                                                <li><span>Maximum deposit:</span> <b>$100.00</b></li>
+                                                <li><span>Percentage:</span> <b>2.20%</b></li>
+                                            </ul>
+                                        </div>
+                                        <div class="deposit-plan__item-btn">
+                                            <a href="javascript:void(0)" class="btn btn-primary-outline">Select Plan</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deposit-open">
+                        <div class="deposit-open__wrap">
+                            <div class="deposit-open__block">
+                                <div class="deposit-open__item item--curr">
+                                    <div class="deposit-open__title"><h2>Deposit</h2></div>
+                                    <div class="deposit-open__subtitle"><h4>Select Currency</h4></div>
+                                    <div class="deposit-open__select select-group">
+                                        <select data-select-custom>
+                                            <option value="bnb">BNB Binance</option>
+                                            <option value="tth">USDT Tether</option>
+                                            <option value="ltc">LTC Litecoin</option>
+                                            <option value="btc">BTC Bitcoin</option>
+                                            <option value="eth">ETH Ethereum</option>
+                                        </select>
+                                    </div>
+                                    <div class="deposit-open__balance">
+                                        <ul>
+                                            <li><span>Total balance:</span> <b>0.00089682 BTC</b></li>
+                                            <li><span>Available Balance:</span> <b>0.00089682 BTC</b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="deposit-open__amount">
+                                        <div class="input-group">
+                                            <label>Amount to Spend ($):</label>
+                                            <input type="number" value="0.00" />
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn btn-primary">Spend</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deposit-open__block">
+                                <div class="deposit-open__item item--coin">
+                                    <div class="deposit-open__subtitle"><h4>Coin Type</h4></div>
+
+                                    <div class="deposit-open__tabs tabs">
+                                        <div class="tabs__nav">
+                                            <ul>
+                                                <li><a href="#coin1" data-tab-nav><b>BTC</b></a></li>
+                                                <li><a href="#coin2" data-tab-nav><b>PEP2</b></a></li>
+                                                <li><a href="#coin3" data-tab-nav><b>BEP20(BSC)</b></a></li>
+                                                <li><a href="#coin4" data-tab-nav><b>BRC20</b></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="coin1" class="tabs__body" data-tab-body>
+                                            <div class="deposit-open__coin">
+                                                <div class="deposit-open__coin-name title-h5">BTC Address</div>
+                                                <div class="deposit-open__coin-qr"><img src="dist/images/qr.png" alt="qr"></div>
+                                                <div class="deposit-open__coin-link">
+                                                    <code id="btcAddress">mkS1XGuDgyhbKJgK1o9FymLti1RzckoUkU</code>
+                                                    <a href="javascript:void(0)" data-clipboard data-clipboard-target="#btcAddress">
+                                                        <img src="dist/images/copy.svg" alt="copy">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="coin2" class="tabs__body" data-tab-body>
+                                            <div class="deposit-open__coin">
+                                                <div class="deposit-open__coin-name title-h5">PEP2 Address</div>
+                                                <div class="deposit-open__coin-qr"><img src="dist/images/qr.png" alt="qr"></div>
+                                                <div class="deposit-open__coin-link">
+                                                    <code id="pepAddress">mkS1XGuDgyhbKJgK1o9FymLti1RzckoUkU</code>
+                                                    <a href="javascript:void(0)" data-clipboard data-clipboard-target="#pepAddress">
+                                                        <img src="dist/images/copy.svg" alt="copy">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="coin3" class="tabs__body" data-tab-body>
+                                            <div class="deposit-open__coin">
+                                                <div class="deposit-open__coin-name title-h5">BEP20(BSC) Address</div>
+                                                <div class="deposit-open__coin-qr"><img src="dist/images/qr.png" alt="qr"></div>
+                                                <div class="deposit-open__coin-link">
+                                                    <code id="bepAddress">mkS1XGuDgyhbKJgK1o9FymLti1RzckoUkU</code>
+                                                    <a href="javascript:void(0)" data-clipboard data-clipboard-target="#bepAddress">
+                                                        <img src="dist/images/copy.svg" alt="copy">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="coin4" class="tabs__body" data-tab-body>
+                                            <div class="deposit-open__coin">
+                                                <div class="deposit-open__coin-name title-h5">BRC20 Address</div>
+                                                <div class="deposit-open__coin-qr"><img src="dist/images/qr.png" alt="qr"></div>
+                                                <div class="deposit-open__coin-link">
+                                                    <code id="brcAddress">mkS1XGuDgyhbKJgK1o9FymLti1RzckoUkU</code>
+                                                    <a href="javascript:void(0)" data-clipboard data-clipboard-target="#brcAddress">
+                                                        <img src="dist/images/copy.svg" alt="copy">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+</body>
+</html>
