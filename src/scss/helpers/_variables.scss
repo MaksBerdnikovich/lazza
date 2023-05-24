@@ -1,0 +1,71 @@
+// gray-color-variables
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000000;
+
+// color-variables
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #ED2929;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #24D169;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+// theme-color-variables
+$main: #707070;
+$primary: #0057FF;
+$secondary: #E4EAF2;
+$styled: #141828;
+$dark: #06142F;
+$dark-70: rgba($dark, 0.7);
+$dark-30: rgba($dark, 0.3);
+$light: #FFFFFF;
+$gray: #6f758b;
+
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+
+// backgrounds
+$main-bg: #FAFAFA;
+$dark-bg: #050727;
+$gray-bg: #f4f7f7;
+$input-bg: rgba($white, 0.21);
+$overlay-bg: rgba(#121212, 0.9);
+$scroll-bg: rgba(119, 119, 119, 0.3);
+$scroll-bg-track: transparent;
+$element-bg: #F1F1F1;
+$element-bg-active: rgba(0, 87, 255, 0.1);
+
+// borders
+$border-card: #F1F1F1;
+$border-form: #E0E0E0;
+$border-pagination: #F2F2F2;
+$separator: #F7F7F7;
+
+// transitions
+$transition: all .3s ease;
+
+// corners
+$corner: 10px;
+$corner-5: 5px;
+$corner-30: 30px;
+
+// shadows
+$shadow-bottom: 0px 5px 10px -3px rgba(0, 0, 0, 0.09);
+$shadow-text: -0 -1px 0 #FFFFFF, 0 -1px 0 #FFFFFF, -0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF, -1px -0 0 #FFFFFF,
+1px -0 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF,
+1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;

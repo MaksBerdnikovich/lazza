@@ -1,0 +1,30 @@
+.grid{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    .grid-item{
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        padding: 0 15px;
+    }
+
+    .grid-item--fluid{
+        width: calc(100% - 320px);
+
+        @include media-mdx{
+            width: 100%;
+        }
+    }
+
+    .grid-item--offset{
+        max-width: 320px;
+
+        @include media-mdx{
+            max-width: none;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.submenu{
+    position: relative;
+
+    &__list{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    &__item{
+        position: relative;
+        width: calc(100% / 4);
+        max-width: 210px;
+        padding: 0 10px;
+
+        @include media-md{
+            width: 50%;
+            max-width: none;
+            margin: 5px 0;
+        }
+
+        @include media-sm{
+            width: 100%;
+        }
+
+        a{
+            width: 100%;
+
+            @include media-sm{
+                font-size: 16px;
+            }
+        }
+
+        a.btn-primary:hover{
+            opacity: 1;
+        }
+    }
+}

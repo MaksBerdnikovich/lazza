@@ -1,0 +1,139 @@
+h1, .title-h1{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    color: $dark;
+}
+
+h2, .title-h2{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $dark;
+}
+
+h3, .title-h3 {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    color: $dark;
+}
+
+h4, .title-h4 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    color: $dark;
+}
+
+h5, .title-h5 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $dark;
+}
+
+h6, .title-h6 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: $dark;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+b{
+    font-weight: 500;
+}
+
+strong{
+    font-weight: 600;
+}
+
+.body-small{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.tr-uppercase{
+    text-transform: uppercase;
+}
+
+.tr-capitalize{
+    text-transform: capitalize;
+}
+
+.tx-primary {
+    color: $primary;
+}
+
+.tx-secondary {
+    color: $secondary;
+}
+
+.tx-dark {
+    color: $dark;
+}
+
+.tx-white {
+    color: $white;
+}
+
+.tx-success{
+    color: $success;
+}
+
+.tx-danger{
+    color: $danger;
+}
+
+.lh-big{
+    line-height: 1.8;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: $transition;
+}
+
+button {
+    cursor: pointer;
+    transition: $transition;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.85;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.m-disable{
+    margin: 0 !important;
+}
+
+.p-disable{
+    padding: 0 !important;
+}

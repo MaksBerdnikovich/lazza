@@ -1,0 +1,101 @@
+.account{
+    position: relative;
+    margin-bottom: 30px;
+
+    @include card(20px);
+
+    &__list{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    &__item{
+        position: relative;
+        width: calc(100% / 4);
+        padding: 0 10px;
+        margin-top: 20px;
+
+        @include media-md{
+            width: 50%;
+        }
+
+        a{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 120px;
+            padding: 15px;
+            border-radius: $corner;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width: 16px;
+                height: 16px;
+                background-image: url("../images/dots.svg");
+                background-repeat: no-repeat;
+            }
+        }
+
+        i{
+            display: flex;
+            height: 34px;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        b{
+            color: rgba($dark, 0.7);
+            margin-bottom: 5px;
+        }
+
+        &.item--user {
+            a{
+                background-color: #FFE2E5;
+            }
+
+            i{
+                color: #FA5A7D;
+            }
+        }
+
+        &.item--balance {
+            a{
+                background-color: #FFF4DE;
+            }
+
+            i{
+                color: #FF947A;
+            }
+        }
+
+        &.item--deposit {
+            a{
+                background-color: #DCFCE7;
+            }
+
+            i{
+                color: #3CD856;
+            }
+        }
+
+        &.item--withdraw {
+            a{
+                background-color: #F3E8FF;
+            }
+
+            i{
+                color: #B672FF;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.tabs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    &__nav {
+        position: relative;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+        }
+
+        li {
+            padding: 0 5px;
+            width: 25%;
+
+            @include media-sm{
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            min-height: 50px;
+            padding: 0 10px;
+            background-color: $element-bg;
+            color: $dark;
+            border-radius: $corner;
+            word-wrap: break-word;
+            word-break: break-all;
+
+            &.active {
+                background-color: $element-bg-active;
+                color: $primary;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+    }
+}

@@ -1,0 +1,142 @@
+.deposit-list {
+    position: relative;
+
+    @include card(30px);
+
+    @include media-sm {
+        padding: 30px 15px;
+    }
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &__block {
+        position: relative;
+        width: 50%;
+        padding: 0 15px;
+
+        @include media-mdx {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        position: relative;
+        min-height: 255px;
+        margin-top: 30px;
+        border: 1px solid $border-card;
+        border-radius: $corner;
+        overflow: hidden;
+
+        &.toggle{
+            min-height: auto;
+        }
+
+        &.item--deposit [data-toggle]{
+            cursor: pointer;
+        }
+
+        &.item--deposit [data-toggle]:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            margin-top: -4px;
+            width: 14px;
+            height: 8px;
+            transform: scale(1, -1);
+            background-image: url("../images/str.svg");
+            background-repeat: no-repeat;
+            transition: $transition;
+        }
+
+        &.item--deposit.toggle [data-toggle]:after {
+            transform: scale(-1, 1);
+        }
+
+        &.item--deposit [data-toggle-target] tr td{
+            height: auto;
+            font-weight: 400;
+        }
+
+        &.item--deposit [data-toggle-target] tr:first-child td{
+            height: 48px;
+        }
+    }
+
+    &__item-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+        padding: 5px 20px;
+        background-color: $element-bg-active;
+
+        color: $primary;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__item-table {
+        position: relative;
+
+        table{
+            position: relative;
+            width: 100%;
+            table-layout: fixed;
+            color: $dark;
+        }
+
+        th, td{
+            height: 48px;
+            padding: 5px;
+            border-top: 1px solid $border-card;
+            vertical-align: middle;
+            text-align: center;
+
+            &:first-child{
+                text-align: left;
+                padding-left: 20px;
+            }
+            &:last-child{
+                text-align: right;
+                padding-right: 20px;
+            }
+        }
+
+        th{
+            font-weight: 400;
+        }
+
+        td{
+            font-weight: 500;
+        }
+
+        .item--deposit-expire{
+            display: flex;
+            flex-direction: column;
+
+            span{
+                font-size: 12px;
+                font-weight: 400;
+                color: $main;
+            }
+        }
+
+        .item--deposit-amount{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            line-height: 0;
+
+            img{
+                margin-right: 5px;
+                width: 20px;
+            }
+        }
+    }
+}

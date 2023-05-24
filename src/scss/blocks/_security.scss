@@ -1,0 +1,133 @@
+.security {
+    position: relative;
+
+    @include card(30px);
+
+    @include media-sm {
+        padding: 30px 15px;
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &__form-line{
+        position: relative;
+        width: 50%;
+        padding: 0 15px;
+        margin-top: 30px;
+
+        @include media-md{
+            width: 100%;
+        }
+
+        &.form-line--btns{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .btn-group{
+            display: flex;
+
+            .btn{
+                font-size: 16px;
+                min-width: 150px;
+            }
+        }
+    }
+
+    &__form-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        min-height: 220px;
+        border: 1px solid $border-card;
+        border-radius: $corner;
+
+        .title-h3{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .radio-group{
+            margin-top: 15px;
+        }
+    }
+
+    &__auth{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__auth-line{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        &:first-child{
+            margin-top: 20px;
+        }
+
+        .title-h3{
+            font-weight: 400;
+            color: $main;
+
+            a{
+                font-weight: 600;
+                color: $primary;
+            }
+
+            code{
+                font-weight: 600;
+                color: $dark;
+                white-space: nowrap;
+            }
+        }
+
+        .qr{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            max-width: 380px;
+
+            img{
+                width: 120px;
+            }
+        }
+
+        .input-group{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            max-width: 460px;
+            margin-top: 20px;
+
+            input{
+                height: 40px;
+                min-height: auto;
+                background-color: rgba(0, 87, 255, 0.05);
+                border-color: transparent;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            button{
+                height: 40px;
+                min-height: auto;
+                font-size: 14px;
+                font-weight: 500;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+}

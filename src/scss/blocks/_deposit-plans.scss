@@ -1,0 +1,139 @@
+.deposit-plan {
+    position: relative;
+
+    @include card(30px);
+
+    @include media-sm{
+        padding: 30px 15px;
+    }
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &__block {
+        position: relative;
+        width: calc(100% / 3);
+        padding: 0 15px;
+        margin-top: 30px;
+
+        @include media-mdx{
+            width: 50%;
+        }
+
+        @include media-md{
+            width: 100%;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        label {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 355px;
+            border: 1px solid $border-card;
+            transition: $transition;
+
+            @include card(30px);
+        }
+
+        input:hover + label{
+            border-color: $primary;
+        }
+
+        input:checked + label {
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
+            box-shadow: 0px 0px 35px rgba(0, 87, 255, 0.3);
+
+            .deposit-plan__item-name,
+            .deposit-plan__item-profit,
+            .deposit-plan__item-info,
+            .deposit-plan__item-info li b{
+                color: $white;
+            }
+
+            .deposit-plan__item-info li:before{
+                color: rgba($white, 0.8);
+            }
+
+            .deposit-plan__item-btn .btn{
+                color: $primary;
+                background-color: $white;
+            }
+        }
+    }
+
+    &__item-name {
+        margin-bottom: 15px;
+    }
+
+    &__item-profit {
+        opacity: 0.7;
+        margin-bottom: 30px;
+    }
+
+    &__item-info {
+        margin-bottom: 15px;
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        li{
+            position: relative;
+            padding-left: 26px;
+            margin-bottom: 15px;
+
+            span{
+                padding-right: 5px;
+                font-size: 16px;
+            }
+
+            b{
+                font-size: 18px;
+                color: $dark;
+            }
+
+            &:before{
+                content: "\e919";
+                font-family: 'icons';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                font-size: 16px;
+                color: rgba($dark, 0.3);
+            }
+        }
+    }
+
+    &__item-btn {
+        position: relative;
+
+        .btn{
+            width: 100%;
+            border-radius: $corner-30;
+            font-weight: 400;
+        }
+    }
+}

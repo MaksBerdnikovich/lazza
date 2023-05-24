@@ -1,0 +1,91 @@
+.sharing {
+    position: relative;
+    width: 100%;
+
+    @include card(30px);
+
+    @include media-mdx{
+        @include card(20px);
+    }
+
+    &__title {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__media {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        position: relative;
+        width: 100%;
+        max-width: 460px;
+        max-height: 40px;
+        margin-top: 20px;
+        margin-right: 15px;
+
+        input{
+            width: 100%;
+            height: 40px;
+            padding: 0 100px 0 20px;
+            background-color: rgba(0, 87, 255, 0.05);
+            border-radius: $corner;
+            font-size: 12px;
+        }
+
+        a{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            color: $primary;
+            z-index: 1;
+        }
+    }
+
+    &__socials {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__socials-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: $corner;
+
+        img{
+            width: auto;
+        }
+
+        &.socials-item--fb{
+            background: rgba(24, 119, 242, 0.1);
+        }
+
+        &.socials-item--tw{
+            background: rgba(29, 155, 240, 0.1);
+        }
+
+        &.socials-item--in{
+            background: rgba(0, 119, 181, 0.1);
+        }
+
+        &.socials-item--ins{
+            background: rgba(254, 1, 154, 0.1);
+        }
+    }
+}

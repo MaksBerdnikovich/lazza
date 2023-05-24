@@ -1,0 +1,125 @@
+@mixin font-face($url, $weight){
+    @font-face{
+        src: local('#{$url}'),
+        url("../fonts/#{$url}.woff") format('woff'),
+        url("../fonts/#{$url}.woff2") format("woff2");
+
+        font-family: 'IBMPlexSans';
+        font-weight: #{$weight};
+        font-style: normal;
+    }
+}
+
+@include font-face('IBMPlexSans-Thin', 100);
+@include font-face('IBMPlexSans-ExtraLight', 200);
+@include font-face('IBMPlexSans-Light', 300);
+@include font-face('IBMPlexSans-Regular', 400);
+@include font-face('IBMPlexSans-Medium', 500);
+@include font-face('IBMPlexSans-SemiBold', 600);
+@include font-face('IBMPlexSans-Bold', 700);
+@include font-face('IBMPlexSans-ExtraBold', 800);
+@include font-face('IBMPlexSans-Black', 900);
+
+
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/icons.eot');
+    src: url('../fonts/icons.eot') format('embedded-opentype'),
+    url('../fonts/icons.ttf') format('truetype'),
+    url('../fonts/icons.woff') format('woff'),
+    url('../fonts/icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark:before {
+    content: "\e900";
+}
+.icon-chevron-right:before {
+    content: "\e902";
+}
+.icon-calendar:before {
+    content: "\e903";
+}
+.icon-info:before {
+    content: "\e904";
+}
+.icon-copy:before {
+    content: "\e905";
+}
+.icon-chevron-down:before {
+    content: "\e906";
+}
+.icon-checked:before {
+    content: "\e919";
+}
+.icon-menu1:before {
+    content: "\e907";
+}
+.icon-ins:before {
+    content: "\e908";
+}
+.icon-in:before {
+    content: "\e909";
+}
+.icon-tw:before {
+    content: "\e90a";
+}
+.icon-fb:before {
+    content: "\e90b";
+}
+.icon-pay:before {
+    content: "\e90c";
+}
+.icon-deposit:before {
+    content: "\e90d";
+}
+.icon-money:before {
+    content: "\e90e";
+}
+.icon-user:before {
+    content: "\e90f";
+}
+.icon-logout:before {
+    content: "\e910";
+}
+.icon-menu9:before {
+    content: "\e911";
+}
+.icon-menu8:before {
+    content: "\e912";
+}
+.icon-menu7:before {
+    content: "\e913";
+}
+.icon-menu6:before {
+    content: "\e914";
+}
+.icon-menu5:before {
+    content: "\e915";
+}
+.icon-menu4:before {
+    content: "\e916";
+}
+.icon-menu3:before {
+    content: "\e917";
+}
+.icon-menu2:before {
+    content: "\e918";
+}

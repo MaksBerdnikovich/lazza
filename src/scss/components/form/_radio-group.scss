@@ -1,0 +1,53 @@
+.radio-group {
+    position: relative;
+
+    input[type=radio] {
+        display: none;
+    }
+
+    label {
+        position: relative;
+        display: inline-flex;
+        height: 20px;
+        line-height: 20px;
+        align-items: center;
+        padding-left: 30px;
+        font-size: 16px;
+        user-select: none;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover{
+            color: $dark;
+        }
+    }
+
+    label:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px solid $border-form;
+        border-radius: $corner-5;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    input[type=radio]:checked + label {
+        color: $dark;
+    }
+
+    input[type=radio]:checked + label:before {
+        border: 1px solid $primary;
+        background-color: $primary;
+        background-image: url('../images/checkmark.svg');
+    }
+
+    input[type=radio]:disabled + label:before {
+        filter: grayscale(100%);
+    }
+}

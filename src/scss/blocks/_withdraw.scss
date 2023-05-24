@@ -1,0 +1,95 @@
+.withdraw{
+    position: relative;
+    min-height: 760px;
+
+    @include card(30px);
+
+    @include media-sm{
+        padding: 30px 15px;
+    }
+
+    &__form{
+        position: relative;
+        max-width: 510px;
+    }
+
+    &__balance{
+        position: relative;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        li{
+            margin-top: 30px;
+            padding: 0 15px;
+            width: 50%;
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+    }
+
+    &__balance-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 120px;
+
+        @include card(15px);
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+
+        span{
+            font-size: 16px;
+            margin-top: 5px;
+        }
+    }
+
+    &__form-line{
+        position: relative;
+        margin-top: 30px;
+
+        .input-group--address {
+            input{
+                color: $main;
+            }
+        }
+
+        .input-group--amount {
+            label{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+
+                b{
+                    font-weight: 700;
+                }
+
+                span{
+                    position: relative;
+                    font-style: normal;
+                    font-size: 14px;
+                    font-weight: normal;
+                    padding-right: 20px;
+                    background-image: url("../images/info.svg");
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                }
+            }
+
+            input{
+                font-weight: 500;
+            }
+        }
+
+        .btn{
+            width: 100%;
+        }
+    }
+}

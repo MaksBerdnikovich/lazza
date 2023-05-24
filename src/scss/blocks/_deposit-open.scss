@@ -1,0 +1,180 @@
+.deposit-open {
+    position: relative;
+
+    @include card(30px);
+
+    @include media-sm{
+        padding: 30px 15px;
+    }
+
+    &__title{
+        margin-bottom: 30px;
+    }
+
+    &__subtitle{
+        margin-bottom: 10px;
+    }
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        margin: 0 -15px;
+
+        @include media-lg{
+           flex-wrap: wrap;
+        }
+    }
+
+    &__block {
+        position: relative;
+        padding: 0 15px;
+        width: calc(100% - 570px);
+
+        @include media-lg{
+            width: 100%;
+        }
+
+        &:last-child{
+            min-width: 570px;
+
+            @include media-lg{
+                width: 100%;
+                min-width: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        &.item--coin{
+            @include card(30px);
+
+            min-height: 420px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+
+            @include media-sm{
+                padding: 30px 15px;
+            }
+        }
+    }
+
+    &__select{
+        position: relative;
+    }
+
+    &__balance{
+        position: relative;
+        margin-top: 20px;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        li{
+            display: flex;
+            flex-wrap: wrap;
+            color: $dark;
+
+            & + li{
+                margin-top: 10px;
+            }
+        }
+
+        span{
+            color: $dark-70;
+            padding-right: 5px;
+        }
+    }
+
+    &__amount{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 50px;
+
+        @include media-xs{
+            flex-direction: column;
+        }
+
+        .input-group{
+            margin-right: 10px;
+
+            @include media-xs{
+                margin: 0;
+            }
+
+            label{
+                color: $dark;
+                font-size: 15px;
+            }
+        }
+
+        .btn-group{
+            min-width: 120px;
+            padding-top: 15px;
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+    }
+
+    &__coin{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    &__coin-qr {
+        position: relative;
+        margin-top: 20px;
+
+        img{
+            max-width: 134px;
+        }
+    }
+
+    &__coin-link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+
+
+        code{
+            font-weight: 500;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

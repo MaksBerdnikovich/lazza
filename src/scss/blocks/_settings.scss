@@ -1,0 +1,50 @@
+.settings {
+    position: relative;
+
+    @include card(30px 30px 100px 30px);
+
+    @include media-sm {
+        padding: 30px 15px;
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &__form-line{
+        position: relative;
+        width: 50%;
+        padding: 0 15px;
+        margin-top: 30px;
+
+        @include media-md{
+            width: 100%;
+        }
+
+        &.form-line--btns{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+        }
+
+        .input-group{
+            label{
+                font-size: 14px;
+                color: $main;
+            }
+        }
+
+        .btn-group{
+            display: flex;
+
+            .btn{
+                font-size: 16px;
+                min-width: 150px;
+            }
+        }
+    }
+}

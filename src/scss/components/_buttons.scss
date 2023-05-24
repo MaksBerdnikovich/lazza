@@ -1,0 +1,45 @@
+.btn{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 30px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+    text-align: center;
+
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: $corner;
+}
+
+.btn-primary{
+    color: $white;
+    background-color: $primary;
+}
+
+.btn-primary-outline{
+    color: $primary;
+    background-color: transparent;
+    border-color: $primary;
+}
+
+.btn-secondary{
+    background-color: $secondary;
+    color: $white;
+}
+
+.btn-secondary-outline{
+    background-color: transparent;
+    color: rgba($dark, 0.5);
+    border-color: $secondary;
+
+    &:hover{
+        color: rgba($dark, 0.7);
+        border-color: rgba($dark, 0.5);
+    }
+}
